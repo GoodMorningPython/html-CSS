@@ -1,0 +1,39 @@
+.redbox {
+  background-color: red;
+  width: max-content + 100px;
+  height: max-content + 100px;
+}
+.bluebox {
+  background-color: blue;
+  width: 200px;
+  height: 200px;
+}
+.greenbox {
+  background-color: green;
+  width: 200px;
+  height: 200px;
+}
+.pinkbox {
+  background-color: pink;
+  width: 200px;
+  height: 200px;
+}
+body::before {
+  content: "This is a colorfull box";
+  display: block;
+  background-image: linear-gradient(
+    to right,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    purple
+  );
+  color: white;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
